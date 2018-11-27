@@ -1,0 +1,78 @@
+/* ****************************************** */
+/* 公共模块 */
+.dyys_banner {
+  height: 165px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* ************************************* */
+/* 招商加盟 */
+.join_main .join_content {
+  padding: 25px 12px 40px;
+  line-height: 24px;
+  color: #000000;
+}
+.join_main .join_content .title_en {
+  font-size: 15px;
+  line-height: 24px;
+}
+.join_main .join_content .title_zh {
+  margin-top: 6px;
+  font-size: 24px;
+}
+.join_main .join_content .para {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+.join_main .join_content .p1 {
+  margin-top: 20px;
+}
+.join_main .join_content .subtitle {
+  margin-top: 25px;
+  font-size: 16px;
+}
+/* ****************************** */
+/* 最新资讯 */
+.news_main .news_wrapper {
+  padding-top: 10px;
+}
+.news_main .news_wrapper .news_list .news {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 10px 12px 35px;
+}
+.news_main .news_wrapper .news_list .news::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d3d3d3;
+}
+.news_main .news_wrapper .news_list .news .news_pic {
+  height: 190px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news_main .news_wrapper .news_list .news .news_title {
+  padding: 0 5px;
+  margin-top: 25px;
+  font-size: 16px;
+  line-height: 1em;
+  color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.news_main .news_wrapper .news_list .news .news_summary {
+  margin-top: 15px;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999999;
+  text-align: justify;
+}
