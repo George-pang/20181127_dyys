@@ -17,6 +17,7 @@ body {
   max-width: 640px;
   margin: 0 auto;
 }
+/* 默认样式重置 */
 a {
   display: block;
   text-decoration: none;
