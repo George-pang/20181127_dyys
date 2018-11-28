@@ -258,6 +258,7 @@
 }
 .products_main .column2 .series_products .layPage .layui-laypage {
   display: flex;
+  justify-content: center;
 }
 .products_main .column2 .series_products .layPage .layui-laypage a,
 .products_main .column2 .series_products .layPage .layui-laypage span {
