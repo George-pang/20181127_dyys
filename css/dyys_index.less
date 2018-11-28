@@ -51,7 +51,7 @@
             margin-top: 20px;
             padding: 14px 17px;
             border: solid 1px #ff725b;
-            >video{
+            #index_video{
                 width: 100%;
                 height: 100%;
                 background-color: #000;
@@ -219,6 +219,369 @@
     }
 }
 
+/* ************************************* */
+/* 产品中心 */
+.products_main{
+    .column1{
+        padding-bottom: 37px;
+        .series_name{
+            font-family: MicrosoftYaHei-Bold;
+            font-size: 16px;
+            line-height: 36px;
+            color: #000000;
+            text-align: center;
+        }
+        .series_introduce{
+            margin-top: 20px;
+            .series_pic{
+                padding: 0 6px;
+                >img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .introduce{
+                margin-top: 30px;
+                font-size: 14px;
+                line-height: 24px;
+                color: #333333;
+            }
+        }
+    }
+    .column2{
+        padding-bottom: 85px;
+        .series_products{
+            #products_list{
+                margin: 36px 0 25px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 0 6px;
+                >li{
+                    flex: 1;
+                    flex-basis: 50%;
+                    padding: 0 5px;
+                    margin-bottom: 10px;
+                    .aLink{
+                        box-shadow: 0px 0px 2px 0px 
+                        rgba(0, 0, 0, 0.3);
+                        cursor: pointer;
+                    }
+                    .products_pic{
+                        >img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .products_name{
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 12px;
+                        color: #333;
+                        text-align: center;
+                    }
+
+                }
+            }
+            .layPage{
+                width: 100%;
+                text-align: center;
+                .layui-laypage{
+                    display: flex;
+                    a,span{
+                        flex: 1;
+                        padding: 0;
+                        text-align: center;
+                    }
+                    .layui-laypage-next em, .layui-laypage-prev em {
+                        font-family: Sim sun;
+                        font-size: 16px;
+                        line-height: 1em;
+                        height: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .column3{
+        padding: 45px 12px 8px;
+        background-color: #ffc9c0;
+        .swiper-container {
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+          }
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 160px;
+            height: 250px;
+          }
+      
+    }
+    .btn_more{
+        margin: 45px auto 0;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #ffffff;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #000000;
+    }
+}
+
+/* ************************************* */
+/* 关于我们 */
+.about_main{
+    .column1{
+        padding-bottom: 35px;
+        .content{
+            margin-top: 25px;
+            >p{
+                font-size: 14px;
+                line-height: 24px;
+                color: #666;
+                text-align: center;
+            }
+            .video_wrapper{
+                margin-top: 30px;
+                >video{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .column2{
+        padding-bottom: 5px;
+        background-color: #ffedea;
+        .content{
+            margin-top: 25px;
+            >p{
+                font-size: 14px;
+                line-height: 24px;
+                color: #333333;
+                text-align: center;
+            }
+            .user_photo{
+                padding: 30px 0;
+                display: flex;
+                justify-content: space-between;
+                .photo{
+                    flex: 1;
+                    >img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .m_r10{
+                    margin-right: 10px;
+                }
+                
+            }
+        }
+    }
+    .column3{
+        padding-bottom: 37px;
+        .content{
+            margin-top: 20px;
+            .member_profile{
+                display: flex;
+                align-items: center;
+                padding: 20px 0;
+                .member_photo{
+                    margin-right: 10px;
+                    >img{
+                        width: 90px;
+                        height: auto;                    
+                    }
+                }
+                .member_info{
+                    .name{
+                        font-size: 16px;
+                        line-height: 1em;
+                        color: #000;
+                        .job{
+                            font-size: 14px;
+                            color: #666;
+                        }
+                    }
+                    .introduce{
+                        margin-top: 10px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #999;
+                    }
+                }
+            }
+            .swiper-pagination-bullet-active{
+                background-color: #ffc9c0;
+            }
+            .swiper-pagination-bullets{
+                bottom: 0;
+            }
+            .photo_list{
+                margin-top: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                .photo{
+                    position: relative;
+                    flex: 1;
+                    flex-basis: 33.33%;
+                    // border: 1px dashed #fff;
+                    >img{
+                        width: 100%;
+                        // height: 100px;
+                    }
+                    // 所有非下标3的倍数的元素
+                    &:not(:nth-of-type(3n+0)){
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 1px;
+                            height: 100%;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                    &:nth-of-type(1),&:nth-of-type(2),&:nth-of-type(3){
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 1px;
+                            background-color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
+
+/* ************************************* */
+/* 联系我们 */
+.contact_main{
+    padding: 30px 12px 0;
+    .title{
+        font-size: 24px;
+        line-height: 1em;
+        color: #000000;
+    }
+    #map_container{
+        margin-top: 25px;
+        width: 100%;
+        height: 150px;
+    }
+    .company_info{
+        margin-top: 30px;
+        .company_name{
+            font-size: 16px;
+            line-height: 1em;
+            color: #23282a;
+        }
+        .info_list{
+            margin-top: 15px;
+            .info_item{
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                .icon{
+                    margin-right: 15px;
+                    >img{
+                        width: 45px;
+                        height: auto;
+                    }
+                }
+                .info{
+                    .subtitle{
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #000000;
+                    }
+                    .txt{
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #9c9c9c;
+                    }
+                }
+            }
+        }
+    }
+    .message_area{
+        margin-top: 35px;
+        .subtitle{
+            font-size: 16px;
+            line-height: 1em;
+            color: #23282a;
+        }
+        .form_box{
+            margin-top: 23px;
+            padding: 0 3px;
+            text-align: center;
+            .input_item{
+                margin-bottom: 10px;
+                >input{
+                    width: 100%;
+                    height: 30px;
+                    line-height: 28px;
+                    border: solid 1px #ccc;
+                    padding: 0 7px;
+                    font-size: 12px;
+                    color: #b7b3b3;
+                }
+            }
+            .message_board{
+                >textarea{
+                    width: 100%;
+                    height: 80px;
+                    padding: 6px 7px;
+                    font-size: 12px;
+                    line-height: 1.5em;
+                    color: #b7b3b3;
+                    border: solid 1px #ccc;
+                }
+            }
+            .btn_submit{
+                display: inline-block;
+                margin-top: 20px;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                color: #fff;
+                text-align: center;
+                border-radius: 3px;
+                background-color: #000000;
+            }
+        }
+    }
+    .wx_qrcode_wrapper{
+        margin-top: 15px;
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        .wx_qrcode{
+            >img{
+                width: 130px;
+                height: auto;
+            }
+        }
+        .tips{
+            flex: 1;
+            font-size: 14px;
+            line-height: 24px;
+            color: #23282a;
+            text-align: center;
+        }
+    }
+}
 
 /* ************************************* */
 /* 招商加盟 */

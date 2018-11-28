@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>产品中心</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- 引用layui css文件 -->
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+    <link rel="stylesheet" href="css/dyys_index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="lib/layui/layui.js"></script>
+    <script src="js/dyys_index.js"></script>
+</head>
+
+<body>
+    <!-- body下布局容器 -->
+    <div class="layout">
+        <div class="dyys_header">
+            <div class="dyys_icon">
+                <div class="icon_pic">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <span class="icon_txt">
+                    朵妍亿莎
+                </span>
+            </div>
+            <div class="nav_menu">
+                <a href="javascript:;" class="btn_menu">
+                    <img src="images/menu.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="dyys_banner" style="background-image:url('images/banner2.jpg')"></div>
+        <div class="products_main">
+            <div class="column column1">
+                <h4 class="series_name">
+                    白肤美 • 净白疗肤套
+                </h4>
+                <div class="series_introduce">
+                    <div class="series_pic">
+                        <img src="images/img6.png" alt="">
+                    </div>
+                    <p class="introduce">
+                        怡人是一家集化妆品原料、研发、生产、加工、培训、项目服务、信息交流于一体化的综合性企业。
+                        拥有先进的生产设备、科研中心、高素质的研发、管理、生产人员，
+                        现今旗下自主经营的品牌主要有“ EAP典雅怡人” “SOYA素雅主义”及“时光季TIME SEASON”。
+                    </p>
+                </div>
+                <a class="btn_more" href="javascript:;">
+                    了解详情
+                </a>
+            </div>
+            <div class="column column2">
+                <h3 class="column_title">系列产品</h3>
+                <h4 class="column_subtitle">SERIES OF PRODUCTS</h4>
+                <div class="series_products">
+                    <ul id="products_list"></ul>
+                    <div id="demo3" class="layPage"></div>
+                </div>
+
+            </div>
+            <div class="column column3">
+                <h3 class="column_title">检测报告</h3>
+                <h4 class="column_subtitle">TEST REPORT</h4>
+                <!-- swiper -->
+                <div class="swiper-container" id="reportSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(images/001.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/002.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/003.jpg)"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="dyys_footer">
+            <ul class="nav_tabs">
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        网站首页
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        关于我们
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        品牌系列
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        产品中心
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        招商加盟
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        联系我们
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p><span class="key">版权所有：</span>安徽俏龄之约生物科技有限公司</p>
+                <p><a href="javascript:;">皖ICP备17007293号</a></p>
+                <p><span class="key">技术支持：</span>优赞科技</p>
+            </div>
+            <p class="wavy_line" style="background-image:url('images/foot.png')"></p>
+        </div>
+        <div class="aside_menu">
+            <div class="btn_close">
+                <a href="javascript:;" class="btn">
+                    <img src="images/close.png" alt="">
+                </a>
+            </div>
+            <ul class="nav_tabs">
+                <li class="nav_tab">
+                    <a href="dyys_index.html">网站首页</a>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_about_us.html">关于我们</a>
+                </li>
+                <li class="nav_tab tab_series">
+                    <a href="javascript:;" class="tab">产品中心
+                        <span class="btn_open" data-open="images/open.png" data-retract="images/retract.png">
+                            <img src="images/open.png" alt="">
+                        </span>
+                    </a>
+                    <ul class="series_list">
+                        <li class="series">
+                            <a href="dyys_products.html">白肤美系列</a>
+                        </li>
+                        <li class="series">
+                            <a href="javascript:;">美肌修护系列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_news.html">最新资讯</a>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_join_us.html">招商加盟</a>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_contact_us.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 初始化分页组件 -->
+    <script>
+        $(function () {
+            //测试数据
+            var data = [{
+                    href: "javascript:;",
+                    src: "images/img7.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img8.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img9.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img10.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img11.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img12.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img12.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img11.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img10.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img9.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img8.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img7.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+
+            ];
+            layui.use(['laypage', 'layer'], function () {
+                var laypage = layui.laypage,
+                    layer = layui.layer;
+                //自定义首页、尾页、上一页、下一页文本
+                laypage.render({
+                    elem: 'demo3',
+                    count: data.length,
+                    limit: 6,
+                    groups: 4,
+                    theme: '#ff8874',
+                    first: '首页',
+                    last: '尾页',
+                    layout: ['prev', 'page', 'next'],
+                    prev: '<em><</em>',
+                    next: '<em>></em>',
+                    jump: function (obj) {
+                        //模拟渲染
+                        document.getElementById('products_list').innerHTML = function () {
+                            var arr = [],
+                                // 截取返回数据组中当前跳转页的数据--.concat()返回数组的浅拷贝
+                                thisData = data.concat().splice(obj.curr * obj.limit -
+                                    obj.limit, obj.limit);
+                            //thisData为当前跳转页的数据数组 
+                            layui.each(thisData, function (index, item) {
+                                arr.push('<li><a class="aLink"  href="' +
+                                    item.href +
+                                    '"/>' +
+                                    '<div class="products_pic"><img src="' +
+                                    item.src +
+                                    '"/></div>' +
+                                    '<p class="products_name">' +
+                                    item.name +
+                                    '</p>' +
+                                    '</a></li>');
+                            });
+                            return arr.join('');
+                        }();
+                    }
+                });
+            });
+
+        });
+    </script>
+
+    <script>
+        $(function () {
+            var swiper = new Swiper('#reportSwiper', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false,
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>

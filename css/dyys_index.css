@@ -49,7 +49,7 @@
   padding: 14px 17px;
   border: solid 1px #ff725b;
 }
-.index_main .column1 .video_wrapper > video {
+.index_main .column1 .video_wrapper #index_video {
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -192,6 +192,342 @@
   text-align: center;
   border-radius: 3px;
   background-color: #000000;
+}
+/* ************************************* */
+/* 产品中心 */
+.products_main .column1 {
+  padding-bottom: 37px;
+}
+.products_main .column1 .series_name {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 16px;
+  line-height: 36px;
+  color: #000000;
+  text-align: center;
+}
+.products_main .column1 .series_introduce {
+  margin-top: 20px;
+}
+.products_main .column1 .series_introduce .series_pic {
+  padding: 0 6px;
+}
+.products_main .column1 .series_introduce .series_pic > img {
+  width: 100%;
+  height: auto;
+}
+.products_main .column1 .series_introduce .introduce {
+  margin-top: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.products_main .column2 {
+  padding-bottom: 85px;
+}
+.products_main .column2 .series_products #products_list {
+  margin: 36px 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 6px;
+}
+.products_main .column2 .series_products #products_list > li {
+  flex: 1;
+  flex-basis: 50%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.products_main .column2 .series_products #products_list > li .aLink {
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.products_main .column2 .series_products #products_list > li .products_pic > img {
+  width: 100%;
+  height: auto;
+}
+.products_main .column2 .series_products #products_list > li .products_name {
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+.products_main .column2 .series_products .layPage {
+  width: 100%;
+  text-align: center;
+}
+.products_main .column2 .series_products .layPage .layui-laypage {
+  display: flex;
+}
+.products_main .column2 .series_products .layPage .layui-laypage a,
+.products_main .column2 .series_products .layPage .layui-laypage span {
+  flex: 1;
+  padding: 0;
+  text-align: center;
+}
+.products_main .column2 .series_products .layPage .layui-laypage .layui-laypage-next em,
+.products_main .column2 .series_products .layPage .layui-laypage .layui-laypage-prev em {
+  font-family: Sim sun;
+  font-size: 16px;
+  line-height: 1em;
+  height: 16px;
+}
+.products_main .column3 {
+  padding: 45px 12px 8px;
+  background-color: #ffc9c0;
+}
+.products_main .column3 .swiper-container {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.products_main .column3 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 160px;
+  height: 250px;
+}
+.products_main .btn_more {
+  margin: 45px auto 0;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #000000;
+}
+/* ************************************* */
+/* 关于我们 */
+.about_main .column1 {
+  padding-bottom: 35px;
+}
+.about_main .column1 .content {
+  margin-top: 25px;
+}
+.about_main .column1 .content > p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+  text-align: center;
+}
+.about_main .column1 .content .video_wrapper {
+  margin-top: 30px;
+}
+.about_main .column1 .content .video_wrapper > video {
+  width: 100%;
+}
+.about_main .column2 {
+  padding-bottom: 5px;
+  background-color: #ffedea;
+}
+.about_main .column2 .content {
+  margin-top: 25px;
+}
+.about_main .column2 .content > p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+}
+.about_main .column2 .content .user_photo {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.about_main .column2 .content .user_photo .photo {
+  flex: 1;
+}
+.about_main .column2 .content .user_photo .photo > img {
+  width: 100%;
+  height: auto;
+}
+.about_main .column2 .content .user_photo .m_r10 {
+  margin-right: 10px;
+}
+.about_main .column3 {
+  padding-bottom: 37px;
+}
+.about_main .column3 .content {
+  margin-top: 20px;
+}
+.about_main .column3 .content .member_profile {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.about_main .column3 .content .member_profile .member_photo {
+  margin-right: 10px;
+}
+.about_main .column3 .content .member_profile .member_photo > img {
+  width: 90px;
+  height: auto;
+}
+.about_main .column3 .content .member_profile .member_info .name {
+  font-size: 16px;
+  line-height: 1em;
+  color: #000;
+}
+.about_main .column3 .content .member_profile .member_info .name .job {
+  font-size: 14px;
+  color: #666;
+}
+.about_main .column3 .content .member_profile .member_info .introduce {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #999;
+}
+.about_main .column3 .content .swiper-pagination-bullet-active {
+  background-color: #ffc9c0;
+}
+.about_main .column3 .content .swiper-pagination-bullets {
+  bottom: 0;
+}
+.about_main .column3 .content .photo_list {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.about_main .column3 .content .photo_list .photo {
+  position: relative;
+  flex: 1;
+  flex-basis: 33.33%;
+}
+.about_main .column3 .content .photo_list .photo > img {
+  width: 100%;
+}
+.about_main .column3 .content .photo_list .photo:not(:nth-of-type(3n+0))::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.about_main .column3 .content .photo_list .photo:nth-of-type(1)::after,
+.about_main .column3 .content .photo_list .photo:nth-of-type(2)::after,
+.about_main .column3 .content .photo_list .photo:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* ************************************* */
+/* 联系我们 */
+.contact_main {
+  padding: 30px 12px 0;
+}
+.contact_main .title {
+  font-size: 24px;
+  line-height: 1em;
+  color: #000000;
+}
+.contact_main #map_container {
+  margin-top: 25px;
+  width: 100%;
+  height: 150px;
+}
+.contact_main .company_info {
+  margin-top: 30px;
+}
+.contact_main .company_info .company_name {
+  font-size: 16px;
+  line-height: 1em;
+  color: #23282a;
+}
+.contact_main .company_info .info_list {
+  margin-top: 15px;
+}
+.contact_main .company_info .info_list .info_item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.contact_main .company_info .info_list .info_item .icon {
+  margin-right: 15px;
+}
+.contact_main .company_info .info_list .info_item .icon > img {
+  width: 45px;
+  height: auto;
+}
+.contact_main .company_info .info_list .info_item .info .subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.contact_main .company_info .info_list .info_item .info .txt {
+  font-size: 14px;
+  line-height: 24px;
+  color: #9c9c9c;
+}
+.contact_main .message_area {
+  margin-top: 35px;
+}
+.contact_main .message_area .subtitle {
+  font-size: 16px;
+  line-height: 1em;
+  color: #23282a;
+}
+.contact_main .message_area .form_box {
+  margin-top: 23px;
+  padding: 0 3px;
+  text-align: center;
+}
+.contact_main .message_area .form_box .input_item {
+  margin-bottom: 10px;
+}
+.contact_main .message_area .form_box .input_item > input {
+  width: 100%;
+  height: 30px;
+  line-height: 28px;
+  border: solid 1px #ccc;
+  padding: 0 7px;
+  font-size: 12px;
+  color: #b7b3b3;
+}
+.contact_main .message_area .form_box .message_board > textarea {
+  width: 100%;
+  height: 80px;
+  padding: 6px 7px;
+  font-size: 12px;
+  line-height: 1.5em;
+  color: #b7b3b3;
+  border: solid 1px #ccc;
+}
+.contact_main .message_area .form_box .btn_submit {
+  display: inline-block;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #000000;
+}
+.contact_main .wx_qrcode_wrapper {
+  margin-top: 15px;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.contact_main .wx_qrcode_wrapper .wx_qrcode > img {
+  width: 130px;
+  height: auto;
+}
+.contact_main .wx_qrcode_wrapper .tips {
+  flex: 1;
+  font-size: 14px;
+  line-height: 24px;
+  color: #23282a;
+  text-align: center;
 }
 /* ************************************* */
 /* 招商加盟 */

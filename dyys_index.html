@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/dyys_index.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/ckplayer.min.js"></script>
     <script src="js/dyys_index.js"></script>
 </head>
 
@@ -50,7 +51,10 @@
                 <h3 class="column_title">朵妍亿莎愈颜专研</h3>
                 <h4 class="column_subtitle">ABOUT US</h4>
                 <div class="video_wrapper">
-                    <video src="images/video22.mp4" controls></video>
+                    <!-- 原生video标签 -->
+                    <!-- <video src="images/video22.mp4" controls id="index_video"></video> -->
+                    <!-- 调用ckplayer.js插件 -->
+                    <div id="index_video"></div>
                 </div>
                 <h4 class="subtitle">关于我们</h4>
                 <div class="about">
@@ -150,10 +154,10 @@
                     <p> <span class="key">邮箱：</span>1084301771@qq.com</p>
                 </div>
                 <div class="contact contact_address">
-                        <h4 class="title">公司地址</h4>
-                        <p>
-                            安徽省合肥市瑶海区新蚌埠路与魏武路交叉口佳海工业园D区66号三楼四楼
-                        </p>
+                    <h4 class="title">公司地址</h4>
+                    <p>
+                        安徽省合肥市瑶海区新蚌埠路与魏武路交叉口佳海工业园D区66号三楼四楼
+                    </p>
                 </div>
                 <div class="contact qrcode">
                     <h4 class="title">微信公众号</h4>
@@ -212,10 +216,10 @@
             </div>
             <ul class="nav_tabs">
                 <li class="nav_tab">
-                    <a href="javascript:;">网站首页</a>
+                    <a href="dyys_index.html">网站首页</a>
                 </li>
                 <li class="nav_tab">
-                    <a href="javascript:;">关于我们</a>
+                    <a href="dyys_about_us.html">关于我们</a>
                 </li>
                 <li class="nav_tab tab_series">
                     <a href="javascript:;" class="tab">产品中心
@@ -225,7 +229,7 @@
                     </a>
                     <ul class="series_list">
                         <li class="series">
-                            <a href="javascript:;">白肤美系列</a>
+                            <a href="dyys_products.html">白肤美系列</a>
                         </li>
                         <li class="series">
                             <a href="javascript:;">美肌修护系列</a>
@@ -233,17 +237,28 @@
                     </ul>
                 </li>
                 <li class="nav_tab">
-                    <a href="javascript:;">最新资讯</a>
+                    <a href="dyys_news.html">最新资讯</a>
                 </li>
                 <li class="nav_tab">
-                    <a href="javascript:;">招商加盟</a>
+                    <a href="dyys_join_us.html">招商加盟</a>
                 </li>
                 <li class="nav_tab">
-                    <a href="javascript:;">联系我们</a>
+                    <a href="dyys_contact_us.html">联系我们</a>
                 </li>
             </ul>
         </div>
     </div>
+    <!-- 初始化ckplayer.js -->
+    <script>
+        $(function () {
+            var videoObject = {
+                container: '#index_video', //“#”代表容器的ID，“.”或“”代表容器的class
+                variable: 'player', //该属性必需设置，值等于下面的new chplayer()的对象
+                video: 'images/video22.mp4' //视频地址
+            };
+            var player = new ckplayer(videoObject);
+        });
+    </script>
     <script>
         /* 初始化swiper */
         $(function () {

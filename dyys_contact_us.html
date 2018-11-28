@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>联系我们</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/dyys_index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=mwvB00WLl6H5NgoEWOauDlCeG9a4ptip"></script>
+    <script src="lib/layer/layer.js"></script>
+    <script src="js/dyys_index.js"></script>
+</head>
+
+<body>
+    <!-- body下布局容器 -->
+    <div class="layout">
+        <div class="dyys_header">
+            <div class="dyys_icon">
+                <div class="icon_pic">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <span class="icon_txt">
+                    朵妍亿莎
+                </span>
+            </div>
+            <div class="nav_menu">
+                <a href="javascript:;" class="btn_menu">
+                    <img src="images/menu.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="dyys_banner" style="background-image:url('images/banner3.jpg')"></div>
+        <div class="contact_main">
+            <h3 class="title">联系我们</h3>
+            <div id="map_container"></div>
+            <div class="company_info">
+                <h4 class="company_name">安徽俏龄之约生物科技有限公司</h4>
+                <ul class="info_list">
+                    <li class="info_item">
+                        <div class="icon">
+                            <img src="images/icon3.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h4 class="subtitle">地址</h4>
+                            <p class="txt">安徽省合肥市瑶海区新蚌埠路与魏武路交叉口佳海工业园D区66号三楼四楼</p>
+                        </div>
+                    </li>
+                    <li class="info_item">
+                        <div class="icon">
+                            <img src="images/icon4.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h4 class="subtitle">联系电话</h4>
+                            <p class="txt">
+                                招商热线：400-990-6299 <br>
+                                市场部电话：0551-62620578
+                            </p>
+                        </div>
+                    </li>
+                    <li class="info_item">
+                        <div class="icon">
+                            <img src="images/icon5.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h4 class="subtitle">邮箱</h4>
+                            <p class="txt">
+                                招商热线：400-990-6299 <br>
+                                市场部电话：0551-62620578
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="message_area">
+                <h4 class="subtitle">
+                    留言反馈
+                </h4>
+                <div class="form_box">
+                    <form action="">
+                        <div class="input_item">
+                            <input type="text" placeholder="您的姓名" id="nameInput">
+                        </div>
+                        <div class="input_item">
+                            <input type="text" placeholder="联系方式" id="telInput">
+                        </div>
+                        <div class="input_item">
+                            <input type="text" placeholder="邮箱" id="emailInput">
+                        </div>
+                        <div class="message_board">
+                            <textarea name="" placeholder="留言内容" style="resize:none" id="msgInput"></textarea>
+                        </div>
+                        <a href="javascript:;" class="btn_submit">提交</a>
+                    </form>
+                </div>
+            </div>
+            <div class="wx_qrcode_wrapper">
+                <div class="wx_qrcode">
+                    <img src="images/img5.jpg" alt="">
+                </div>
+                <div class="tips">
+                    扫一扫二维码 <br>
+                    关注俏龄之约公众号
+                </div>
+            </div>
+        </div>
+
+        <div class="dyys_footer">
+            <ul class="nav_tabs">
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        网站首页
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        关于我们
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        品牌系列
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        产品中心
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        招商加盟
+                    </a>
+                </li>
+                <li class="nav_tab">
+                    <a href="javascript:;" class="aLink">
+                        联系我们
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <p><span class="key">版权所有：</span>安徽俏龄之约生物科技有限公司</p>
+                <p><a href="javascript:;">皖ICP备17007293号</a></p>
+                <p><span class="key">技术支持：</span>优赞科技</p>
+            </div>
+            <p class="wavy_line" style="background-image:url('images/foot.png')"></p>
+        </div>
+        <div class="aside_menu">
+            <div class="btn_close">
+                <a href="javascript:;" class="btn">
+                    <img src="images/close.png" alt="">
+                </a>
+            </div>
+            <ul class="nav_tabs">
+                <li class="nav_tab">
+                    <a href="dyys_index.html">网站首页</a>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_about_us.html">关于我们</a>
+                </li>
+                <li class="nav_tab tab_series">
+                    <a href="javascript:;" class="tab">产品中心
+                        <span class="btn_open" data-open="images/open.png" data-retract="images/retract.png">
+                            <img src="images/open.png" alt="">
+                        </span>
+                    </a>
+                    <ul class="series_list">
+                        <li class="series">
+                            <a href="dyys_products.html">白肤美系列</a>
+                        </li>
+                        <li class="series">
+                            <a href="javascript:;">美肌修护系列</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_news.html">最新资讯</a>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_join_us.html">招商加盟</a>
+                </li>
+                <li class="nav_tab">
+                    <a href="dyys_contact_us.html">联系我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        /* 初始化地图实例 */
+        $(function () {
+            var map = new BMap.Map("map_container"); // 创建地图实例  
+            var point = new BMap.Point(117.348992, 31.982725); // 创建点坐标  
+            map.centerAndZoom(point, 15);
+            map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+            var marker = new BMap.Marker(point); // 创建红色水滴标注
+            map.addOverlay(marker); // 将标注添加到地图中
+        });
+    </script>
+</body>
+
+</html>

@@ -41,6 +41,10 @@ input {
   outline: none;
   border: none;
 }
+textarea {
+  outline: none;
+  border: none;
+}
 /* input 占位符字体颜色 */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
@@ -157,7 +161,7 @@ textarea::-webkit-input-placeholder {
 }
 .dyys_footer .wavy_line {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   transform: translateY(-100%);
   width: 100%;
