@@ -225,6 +225,36 @@
                 },
                 {
                     href: "javascript:;",
+                    src: "images/img7.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img8.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img9.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img10.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img11.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
+                    src: "images/img12.jpg",
+                    name: "安敏修复天丝面膜"
+                },
+                {
+                    href: "javascript:;",
                     src: "images/img12.jpg",
                     name: "安敏修复天丝面膜"
                 },
@@ -255,22 +285,7 @@
                 },
                 {
                     href: "javascript:;",
-                    src: "images/img12.jpg",
-                    name: "安敏修复天丝面膜"
-                },
-                {
-                    href: "javascript:;",
-                    src: "images/img11.jpg",
-                    name: "安敏修复天丝面膜"
-                },
-                {
-                    href: "javascript:;",
-                    src: "images/img10.jpg",
-                    name: "安敏修复天丝面膜"
-                },
-                {
-                    href: "javascript:;",
-                    src: "images/img9.jpg",
+                    src: "images/img7.jpg",
                     name: "安敏修复天丝面膜"
                 },
                 {
@@ -280,17 +295,7 @@
                 },
                 {
                     href: "javascript:;",
-                    src: "images/img7.jpg",
-                    name: "安敏修复天丝面膜"
-                },
-                {
-                    href: "javascript:;",
-                    src: "images/img12.jpg",
-                    name: "安敏修复天丝面膜"
-                },
-                {
-                    href: "javascript:;",
-                    src: "images/img11.jpg",
+                    src: "images/img9.jpg",
                     name: "安敏修复天丝面膜"
                 },
                 {
@@ -300,17 +305,12 @@
                 },
                 {
                     href: "javascript:;",
-                    src: "images/img9.jpg",
+                    src: "images/img11.jpg",
                     name: "安敏修复天丝面膜"
                 },
                 {
                     href: "javascript:;",
-                    src: "images/img8.jpg",
-                    name: "安敏修复天丝面膜"
-                },
-                {
-                    href: "javascript:;",
-                    src: "images/img7.jpg",
+                    src: "images/img12.jpg",
                     name: "安敏修复天丝面膜"
                 },
                 {
@@ -345,6 +345,25 @@
                 },
 
             ];
+            // 图片预加载
+            //存放图片路径的数组
+            var imgSrcArr = [];
+            $.each(data,function(index,ele){
+                imgSrcArr.push(ele.src);
+            });
+            console.log(imgSrcArr);
+            var imgWrap = [];
+
+            function preloadImg(arr) {
+                for (var i = 0; i < arr.length; i++) {
+                    imgWrap[i] = new Image();
+                    imgWrap[i].src = arr[i];
+                }
+                console.log(imgWrap);
+            }
+            preloadImg(imgSrcArr);
+            
+            // 初始化layui分页组件
             layui.use(['laypage', 'layer'], function () {
                 var laypage = layui.laypage,
                     layer = layui.layer;
